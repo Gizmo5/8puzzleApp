@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>8 - PUZZLE</title>
+    <link href="./resources/css/index.css" type="text/css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="header">
+      <h1> 8 - PUZZLE </h1>
+    </div>
+    <div class="bckgrnd">
+      <h3> Background : </h3>
+      <img src="https://ds055uzetaobb.cloudfront.net/image_optimizer/b33fea9161032a996a72da1ac376fbd09f622a42.png" />
+      <p> The 8 puzzle also often called the 9-puzzle is a 3x3 tiles puzzle where the objective is to place the tiles in order
+        by making sliding moves that use the empty space. The twist in this app is that the challenge is to do it in as few moves as possible.
+        There is a minimum amount of moves you have to make (the optimal solution) that sets how difficult it is to solve the puzzle.
+        If you manage to move the same amount of moves as the optimal solution you get the score of the difficulty. Each move above the difficulty level
+        will be subtracted from the score. The scoreboard has room for top five scores. If you get a new higscore you will be prompted to write your name or initials and save it. <br /> <br /> <br /></p>
+    </div>
+    <div class="howitworks">
+      <h2> How it works: </h2>
+      <p> The app is a one screen app. It has one slider for difficulty. Moving this slider will update the difficulty text box <em>(pass information from one activity to the next)</em>. When you then hit the SHUFFLE button <em>(button which triggers an action when clicked)</em>,
+        the app will shuffle the labels and background color on the 9 buttons that makes out the puzzle according to the number of moves shown by the difficulty number.
+        For this to work, an algorithm giving an optimal solution has to be designed for the shuffling. There are several to choose from.<br /><br />
+        When you push a number button <em>(button which triggers an action when clicked)</em> close to the blank button (dark grey here in wireframe below), the button and blank will exchange background color and labels. This will be counted
+        as a move and the "moves" text box will be incremented showing one more move. If it is to hard, you can push the SOLVE button <em>(button which triggers an action when clicked)</em> and the app will show the
+        moves with a 1 second delay, slow enough to see the solution. <br /> <br />
+        When you solve the puzzle the background image that has been invisible will be brought to the front covering the puzzle buttons <em>(display an image)</em>. If you make it to the top five list, you will get a popup
+        message <em>(display a pop-up message ("toast"))</em> where you can write in your name or initials and save it to disk <em>(save information on disk and use it in future executions)</em>. <br /> <br />
+        The SCOREBOARD button shows a popup message <em>(display a pop-up message ("toast"))</em> with a list of top five results.</em></p>
+    </div>
+    <div class="wireframe">
+      <h2> Wireframe: </h2>
+      <img src="./resources/pics/Wireframe_8_puzzle.png"/>
+    </div>
+    <div class="main">
+      <h2> Layout </h2>
+      <p> The layout is sketched in the wireframe sketch above. The application is a one screen application. The application has a horizontal layout of 6 rows.
+      5 of the rows takes up 1/10 of the space of the screen making up for half the screen toghether. The puzzle takes up the other half the screen.
+      Some of the rows has nested horizonal layout and/or vertical layout <em>(use at least 2 layouts)</em>. The layout is explained in the list below. <br /> <br /></p>
+      <h3>Horizontal Layout: </h3>
+      <ol>
+        <li> First row is a header (taking up 1/10 of screen)</li>
+        <li> Second row is a difficulty slider (taking up 1/10 of screen) </li>
+        <li> Third row (taking up 1/10 of screen horizontally) has a vertical layout:
+          <ol>
+            <li> First column has a text saying "moves" (taking up 1/2 of screen)</li>
+            <li> Second column has a textbox stating current number of moves (taking up 1/2 screen)
+          </ol>
+        </li>
+        <li> Fourth row (taking up 1/10 of screen horizontally) has a vertical layout:
+          <ol>
+            <li> First column has a text saying "difficulty" (taking up 1/2 of screen)</li>
+            <li> Second column has a textbox stating the (difficulty) minimum number of moves (taking up 1/2 screen)
+          </ol>
+        </li>
+        <li> The fifth row is divided into a horizontal layout of 3 rows and a each row has a vertical layout of 3 columns. This row has a background image taking up the whole row size which is 1/2 of the screen size.
+        the 3 rows are evenly space making up 1/3 of the horizontal layout row. The 3 columns is evenly spaced 1/3 of screen size.</li>
+        <li> Last row (taking up 1/10 of screen horizontally) is a button row with vertical layout of 3 columns with 3 buttons.
+          <ol>
+            <li> First column has a shuffle button (taking up 1/4 of screen)</li>
+            <li> Second column has a scoreboard button (taking up 1/2 screen) </li>
+            <li> Third column has a solve button (taking up 1/4 of screen)</li>
+          </ol>
+        </li>
+      </ol>
+    </div>
+  </body>
+</html>

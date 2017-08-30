@@ -1,0 +1,36 @@
+
+body {
+  font-familiy: Arial;
+  background: url("http://www.wildtextures.com/wp-content/uploads/2011/10/wildtextures-old-wood-original-file-1200x800.jpg");
+  background-size: cover;
+}
+.header, .bckgrnd, .main, .howitworks, .wireframe{
+  border-radius: 15px 50px 30px;
+  background-color: #eaecef;/*#c69b7f;*/
+}
+.bckgrnd, .main, .howitworks{
+  font-size: 30px;
+}
+.bckgrnd h3, .main h3 {
+  font-size: 50px;
+}
+.main h2, .howitworks h2, .wireframe h2 {
+  font-size: 70px;
+}
+.header, .bckgrnd, .wireframe, .howitworks {
+  text-align: center;
+}
+
+.header h1{
+  font-size: 100px;
+  background: url("https://images.pexels.com/photos/172289/pexels-photo-172289.jpeg?h=350&auto=compress&cs=tinysrgb");
+}
+
+.header h3, .main h3, .main h2, .howitworks h2{
+  font-weight:bold;
+}
+
+.wireframe img, .bckgrnd img{
+  display: block;
+  margin: auto;
+}
